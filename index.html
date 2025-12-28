@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EU Declaration of Conformity - Nasogtech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .doc-card:hover { transform: translateY(-5px); transition: all 0.3s; }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+    <div class="max-w-5xl mx-auto">
+        <header class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-800">EU Declaration of Conformity (DoC)</h1>
+            <p class="text-gray-500 mt-2">请根据您的产品型号和购买店铺下载对应的文件</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 doc-card">
+                <div class="flex items-center mb-4">
+                    <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-bold">Model: 9193</span>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-sm font-semibold text-gray-400 mb-2">Shop: huiqichuang</p>
+                        <div class="flex flex-wrap gap-2">
+                            <script>
+                                const langs = ['EN','DE','ES','FR','IT','SE','PL','NE'];
+                                const createLinks = (model, shop) => {
+                                    langs.forEach(lang => {
+                                        document.write(`<a href="./${model}/${shop}/${lang}.pdf" target="_blank" class="px-3 py-1 bg-gray-50 hover:bg-blue-500 hover:text-white border border-gray-200 rounded text-xs transition">${lang}</a>`);
+                                    });
+                                }
+                                createLinks('9193', 'huiqichuang');
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 doc-card">
+                <div class="flex items-center mb-4">
+                    <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-bold">Model: K8</span>
+                </div>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-sm font-semibold text-gray-400 mb-2">Shop: Getchworld</p>
+                        <div class="flex flex-wrap gap-2">
+                            <script>createLinks('K8', 'Getchworld');</script>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-gray-400 mb-2">Shop: huiqichuang</p>
+                        <div class="flex flex-wrap gap-2">
+                            <script>createLinks('K8', 'huiqichuang');</script>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-gray-400 mb-2">Shop: Baofular</p>
+                        <div class="flex flex-wrap gap-2">
+                            <script>createLinks('K8', 'Baofular');</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="mt-20 text-center text-gray-400 text-sm">
+            © 2024 Nasogtech - All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
